@@ -1,0 +1,18 @@
+1. // simple closure //
+function x(){
+   var a = "i am out side";
+    function y(){
+       console.log(a);
+   }
+  
+   y();
+}
+x();
+2. // closures with parameters
+function a(a){
+    return function(b){
+        return b*a; 
+    };
+}
+const c = a(5);
+console.log(c(5))
